@@ -14,5 +14,5 @@ def _loads(string):
     return collections.OrderedDict(email.message_from_string(string))
 
 class recordjar:
-    load = functools.partial(jar.util.reader, _loads)
-    dump = functools.partial(jar.util.writer, _dumps)
+    load = functools.partial(cereal_jar.util.reader, _loads)
+    dump = functools.partial(cereal_jar.util.writer, _dumps)
