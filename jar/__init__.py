@@ -1,1 +1,2 @@
-from jars import cookiejar, recordjar
+from jar.cookiejar import cookiejar
+from jar.recordjar import recordjar
